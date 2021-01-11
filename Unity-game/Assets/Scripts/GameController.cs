@@ -8,6 +8,6 @@ public class GameController : MonoBehaviourPun
     {
         int i = PhotonNetwork.CurrentRoom.PlayerCount - 1;
 
-        PhotonNetwork.Instantiate("Chev666", SpawnPoint[i].position,SpawnPoint[i].rotation);
+        //PhotonNetwork.Instantiate("Chev666", SpawnPoint[i].position,SpawnPoint[i].rotation);
     }
 }
