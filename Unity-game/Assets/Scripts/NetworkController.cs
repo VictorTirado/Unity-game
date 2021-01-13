@@ -46,7 +46,7 @@ public class NetworkController : MonoBehaviourPunCallbacks
     {
         base.OnJoinedRoom();
 
-        SceneManager.LoadScene("Level");
+        SceneManager.LoadScene("Car Selector");
     }
     private void Status(string msg)
     {

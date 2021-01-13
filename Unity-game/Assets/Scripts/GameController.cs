@@ -7,7 +7,7 @@ public class GameController : MonoBehaviourPun
     private void Awake()
     {
         int i = PhotonNetwork.CurrentRoom.PlayerCount - 1;
-
-        //PhotonNetwork.Instantiate("Chev666", SpawnPoint[i].position,SpawnPoint[i].rotation);
+        Debug.Log(GameObject.Find("Cars").GetComponent<ChangeCar>().car_name);
+        PhotonNetwork.Instantiate(GameObject.Find("Cars").GetComponent<ChangeCar>().car_name, SpawnPoint[i].position,SpawnPoint[i].rotation);
     }
 }
