@@ -8,21 +8,37 @@ public class LapCounter : MonoBehaviour
     public GameObject lapsCount;
     public GameObject cameratoRotate;
     public GameObject cameratoStop;
-    
+    private bool on = false;
 
     public int lapsDown;
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.name == "ColliderBody")
+        if (other.name == "start_collider")
         {
-            if (Time.time > 10f)
-            {
-            Debug.Log("HIIIIIIIIIIIIIIIII");
-            lapsDown += 1;
-            }            
+            Debug.Log("IS TRUE");
+            on = true;
         }
-        lapsCount.GetComponent<Text>().text = "" + lapsDown;
+        if (other.name == "finish_collider")
+        {
+            
+            if (Time.time > 10f && on == false)
+            {
+                Debug.Log("IS FALSE");
+                Debug.Log("HIIIIIIIIIIIIIIIII");
+                lapsDown += 1;
+                
+            }
+            lapsCount.GetComponent<Text>().text = "" + lapsDown;
+        }
+        if(other.name == "end_collider")
+        {
+            on = false;
+        }
+        
+        
+        
+        
     }
     private void Start()
     {
@@ -33,9 +49,10 @@ public class LapCounter : MonoBehaviour
         if(lapsDown == 3)
         {
             //TODO CONDITION WIN
+            
             cameratoStop.SetActive(false);
             cameratoRotate.SetActive(true);
-            cameratoRotate.transform.Rotate(0, 0.5f, 0, Space.World);
+            cameratoRotate.transform.Rotate(0, 0.2f, 0, Space.World);
             
         }
     }
