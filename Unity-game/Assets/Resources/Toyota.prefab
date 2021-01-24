@@ -9840,7 +9840,7 @@ GameObject:
   - component: {fileID: 8573207764494470062}
   - component: {fileID: 8573207764494470063}
   m_Layer: 0
-  m_Name: Car Variant
+  m_Name: Toyota
   m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

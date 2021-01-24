@@ -7,7 +7,7 @@ public class ChangeCar : MonoBehaviour
 {
     public GameObject[] Cars;
     public int selectedCar = 0;
-    public string car_name = "patata";
+    public string car_name = "Chev666";
 
     private void Awake()
     {
