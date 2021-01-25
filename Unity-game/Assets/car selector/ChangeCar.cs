@@ -7,7 +7,7 @@ public class ChangeCar : MonoBehaviour
 {
     public GameObject[] Cars;
     public int selectedCar = 0;
-    public string car_name = "Chev666";
+    public string car_name = "";
 
     private void Awake()
     {
@@ -15,15 +15,15 @@ public class ChangeCar : MonoBehaviour
     }
     public void NextCar()
     {
-        Debug.Log("HHIIIIIIIIIIIIIII");
+       
         Cars[selectedCar].SetActive(false);
         selectedCar = (selectedCar + 1) % Cars.Length;
         Cars[selectedCar].SetActive(true);
-        Debug.Log("HHIIIIIIIIIIIIIII");
+       
     }
     public void PreviousCar()
     {
-        Debug.Log("HHIIIIIIIIIIIIIII");
+       
         Cars[selectedCar].SetActive(false);
         selectedCar--;
         if(selectedCar < 0)
@@ -31,7 +31,7 @@ public class ChangeCar : MonoBehaviour
             selectedCar += Cars.Length;
         }
         Cars[selectedCar].SetActive(true);
-        Debug.Log("HHIIIIIIIIIIIIIII");
+        
     }
 
 
