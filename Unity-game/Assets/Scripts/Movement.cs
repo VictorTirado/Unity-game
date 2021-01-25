@@ -52,7 +52,7 @@ public class Movement : MonoBehaviourPun
         for(int i=0;i<4;i++)
         {
             //wheelMesh[i].transform.position = wheelPosition;
-            //wheelMesh[i].transform.rotation = wheelRotation;
+            wheelMesh[i].transform.rotation = wheelRotation;
         }
     }
 }
