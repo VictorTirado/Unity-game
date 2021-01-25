@@ -9917,6 +9917,7 @@ GameObject:
   - component: {fileID: 7917250425724598862}
   - component: {fileID: 7917250425724598848}
   - component: {fileID: 2940866920266955170}
+  - component: {fileID: 3655571146550853499}
   m_Layer: 0
   m_Name: Toyota
   m_TagString: Player
@@ -10047,7 +10048,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7917250425734270930}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f7a1e864ebf66b347b9d10c888fcfa7c, type: 3}
   m_Name: 
@@ -10056,6 +10057,20 @@ MonoBehaviour:
   cameratoRotate: {fileID: 0}
   cameratoStop: {fileID: 0}
   lapsDown: 0
+--- !u!114 &3655571146550853499
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7917250425734270930}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5d5c91b9cb987ac4aad555dea3fc4621, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  victory: 0
+  checks: []
 --- !u!1 &7917250425734270936
 GameObject:
   m_ObjectHideFlags: 0
