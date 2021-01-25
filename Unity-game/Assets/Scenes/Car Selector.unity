@@ -400,7 +400,7 @@ MonoBehaviour:
   m_enableWordWrapping: 1
   m_wordWrappingRatios: 0.4
   m_overflowMode: 0
-  m_firstOverflowCharacterIndex: 0
+  m_firstOverflowCharacterIndex: -1
   m_linkedTextComponent: {fileID: 0}
   m_isLinkedTextComponent: 0
   m_isTextTruncated: 0
@@ -815,6 +815,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5958124164328433732, guid: c78fbde5c6dc17f45996166dbd184283,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8573207764494470049, guid: c78fbde5c6dc17f45996166dbd184283,
         type: 3}
       propertyPath: m_Name
@@ -839,6 +844,18 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 732771470}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &732771473
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 732771472}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5951f3ec4805db448a43f8d5a949b392, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &758939280
 GameObject:
   m_ObjectHideFlags: 0
