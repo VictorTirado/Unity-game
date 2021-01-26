@@ -39,18 +39,24 @@ public class CheckpointCheck : MonoBehaviour
         }
     }
 
-    void OnCollisionEnter(Collision collision)
+    void OnTriggerEnter(Collider other)
     {
-        if (collision.gameObject.tag == "Checkpoint")
+        Debug.Log("COLLIDING");
+
+        if (other.gameObject.tag == "Checkpoint")
         {
+            Debug.Log("COLLIDED WITH CHECKPOINT");
+
             lastCheckpointPos = transform.position;
             lastCheckpointRot = transform.rotation;
 
-            collision.gameObject.SetActive(false);
+            other.gameObject.SetActive(false);
         }
 
-        else if (collision.gameObject.tag == "Goal")
+        else if (other.gameObject.tag == "Goal")
         {
+            Debug.Log("COLLIDIED WITH GOAL");
+
             bool passedAllChecks = true;
 
             foreach (GameObject checkpoint in checks)
