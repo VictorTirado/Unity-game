@@ -22,10 +22,13 @@ public class CheckpointCheck : MonoBehaviour
 
         GameObject go = GameObject.Find("Checkpoints");
 
-        foreach (Transform child in go.transform)
+        if (go)
         {
-            checks.Add(child.gameObject);
-        }
+            foreach (Transform child in go.transform)
+            {
+                checks.Add(child.gameObject);
+            }
+        }        
     }
 
     void Update()

@@ -92,7 +92,6 @@ GameObject:
   m_Component:
   - component: {fileID: 2709371367989743872}
   - component: {fileID: 9201208672084430093}
-  - component: {fileID: 7697167667389036029}
   m_Layer: 0
   m_Name: SportCar20_BrakeFrontRight
   m_TagString: Untagged
@@ -131,19 +130,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   wheel: {fileID: 312517861841458298}
---- !u!114 &7697167667389036029
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 211529088304059305}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 459cec5b068041e44a60a6e3b6abb0eb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  carController: {fileID: 0}
 --- !u!1 &218523098288175212
 GameObject:
   m_ObjectHideFlags: 0
@@ -350,7 +336,6 @@ GameObject:
   m_Component:
   - component: {fileID: 5272395381125167636}
   - component: {fileID: 1041747089733387449}
-  - component: {fileID: 9123800984592610810}
   m_Layer: 0
   m_Name: SportCar20_BrakeFrontLeft
   m_TagString: Untagged
@@ -389,19 +374,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   wheel: {fileID: 999228157212385336}
---- !u!114 &9123800984592610810
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 402091408627021789}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 459cec5b068041e44a60a6e3b6abb0eb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  carController: {fileID: 0}
 --- !u!1 &467609702470189367
 GameObject:
   m_ObjectHideFlags: 0
