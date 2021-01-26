@@ -14,11 +14,15 @@ public class CheckpointCheck : MonoBehaviour
 
     public List<GameObject> checks;
 
+    private Rigidbody car_body;
+
     // Start is called before the first frame update
     void Start()
     {
         lastCheckpointPos = transform.position;
         lastCheckpointRot = transform.rotation;
+
+        car_body = GetComponent<Rigidbody>();
 
         GameObject go = GameObject.Find("Checkpoints");
 
@@ -89,5 +93,6 @@ public class CheckpointCheck : MonoBehaviour
     {
         transform.position = lastCheckpointPos;
         transform.rotation = lastCheckpointRot;
+        car_body.velocity = Vector3.zero;
     }
 }
