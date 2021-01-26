@@ -87,6 +87,11 @@ public class CheckpointCheck : MonoBehaviour
                 }
             }
         }
+        else if(collider.gameObject.tag == "Map")
+        {
+            Debug.Log("COLLIDING WITH MAP! YOU ARE OUT OF THE ROAD");
+            respawnLastCheckpoint();
+        }
     }
 
     public void respawnLastCheckpoint()
