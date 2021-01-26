@@ -7,6 +7,8 @@ public class CheckpointCheck : MonoBehaviour
     Vector3 lastCheckpointPos;
     Quaternion lastCheckpointRot;
 
+    
+
     [HideInInspector] public bool victory = false;
 
     [HideInInspector] public int laps = 0;
@@ -40,6 +42,12 @@ public class CheckpointCheck : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.T))
         {
             respawnLastCheckpoint();
+        }
+        if(victory == true)
+        {
+            //WIN CONDITION
+            gameObject.GetComponent<GameController>().enabled = false;
+            
         }
     }
 
@@ -100,4 +108,6 @@ public class CheckpointCheck : MonoBehaviour
         transform.rotation = lastCheckpointRot;
         car_body.velocity = Vector3.zero;
     }
+
+    
 }
