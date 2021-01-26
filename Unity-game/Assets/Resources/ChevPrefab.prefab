@@ -76,6 +76,7 @@ GameObject:
   - component: {fileID: 2364009136207471823}
   - component: {fileID: -394731646107263730}
   - component: {fileID: -192946905803705879}
+  - component: {fileID: 4914470655493789310}
   m_Layer: 0
   m_Name: ChevPrefab
   m_TagString: Player
@@ -252,6 +253,19 @@ MonoBehaviour:
   laps: 0
   lapsToWin: 1
   checks: []
+--- !u!65 &4914470655493789310
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2003811639843890354}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 2, y: 1, z: 5}
+  m_Center: {x: 0, y: 0.5, z: 0}
 --- !u!1 &2003811639843890360
 GameObject:
   m_ObjectHideFlags: 0
