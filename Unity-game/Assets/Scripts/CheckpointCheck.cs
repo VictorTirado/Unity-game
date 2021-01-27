@@ -11,7 +11,7 @@ public class CheckpointCheck : MonoBehaviour
 
     [HideInInspector] public bool victory = false;
 
-    [HideInInspector] public int laps = 0;
+    public int laps = 0;
     public int lapsToWin = 1;
 
     public List<GameObject> checks;

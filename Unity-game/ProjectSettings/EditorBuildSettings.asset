@@ -6,15 +6,15 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 0
-    path: Assets/Scenes/Launcher.unity
-    guid: 9e0dbfffc55d4d94d91a7584f520d360
+    path: 
+    guid: 00000000000000000000000000000000
   - enabled: 0
-    path: Assets/Scenes/Room for 4.unity
-    guid: 22cda0d97941fe94f9c2815909b00b71
+    path: 
+    guid: 00000000000000000000000000000000
   - enabled: 1
     path: Assets/Scenes/Menu.unity
     guid: 91a4d82469fc7e54c99637a13c3a3811
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Car Selector.unity
     guid: c8610f9a59f30ac44aa51873975d321c
   - enabled: 1
