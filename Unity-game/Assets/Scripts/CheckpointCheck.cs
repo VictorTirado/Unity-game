@@ -71,7 +71,7 @@ public class CheckpointCheck : MonoBehaviour
             lastCheckpointPos = transform.position;
             lastCheckpointRot = transform.rotation;
 
-            collider.gameObject.SetActive(false);
+            //collider.gameObject.SetActive(false);
         }
 
         else if (collider.gameObject.tag == "Goal")
