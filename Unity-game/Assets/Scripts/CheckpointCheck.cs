@@ -21,6 +21,7 @@ public class CheckpointCheck : MonoBehaviour
     public float lap_time = 0.0f;
     public float fast_lap = 0.0f;
     bool passed_goal = false;
+    bool check_bool = false;
 
     // Start is called before the first frame update
     void Start()
@@ -50,12 +51,7 @@ public class CheckpointCheck : MonoBehaviour
         {
             respawnLastCheckpoint();
         }
-        if(victory == true)
-        {
-            //WIN CONDITION
-            gameObject.GetComponent<GameController>().enabled = false;
-            
-        }
+        
     }
 
     void OnTriggerEnter(Collider collider)
@@ -73,14 +69,18 @@ public class CheckpointCheck : MonoBehaviour
 
             //collider.gameObject.SetActive(false);
         }
+        if (collider.gameObject.tag == "check_bool")
+        {
+            check_bool = true;
+        }
 
         else if (collider.gameObject.tag == "Goal")
-        {         
-            if(fast_lap == 0.0f && passed_goal == false)
+        {
+            if (fast_lap == 0.0f && passed_goal == false)
             {
                 fast_lap = lap_time;
             }
-            else if(lap_time < fast_lap && passed_goal == false)
+            else if (lap_time < fast_lap && passed_goal == false)
             {
                 fast_lap = lap_time;
             }
@@ -91,18 +91,9 @@ public class CheckpointCheck : MonoBehaviour
 
             Debug.Log("COLLIDING WITH THE GOAL!");
 
-            bool passedAllChecks = true;
+            
 
-            foreach (GameObject checkpoint in checks)
-            {
-                if (checkpoint.activeInHierarchy)
-                {
-                    passedAllChecks = false;
-                    break;
-                }                
-            }
-
-            if (passedAllChecks)
+            if (check_bool)
             {
                 foreach (GameObject checkpoint in checks)
                 {
@@ -117,7 +108,7 @@ public class CheckpointCheck : MonoBehaviour
                 }
             }
         }
-        else if(collider.gameObject.tag == "Map")
+        else if (collider.gameObject.tag == "Map")
         {
             Debug.Log("COLLIDING WITH MAP! YOU ARE OUT OF THE ROAD");
             //respawnLastCheckpoint();
