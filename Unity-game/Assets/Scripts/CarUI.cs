@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
+
 public class CarUI : MonoBehaviour
 {
     GameObject text;
@@ -24,7 +25,7 @@ public class CarUI : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        car_variant = GameObject.Find("Car Variant");
+        car_variant = transform.parent.gameObject;
         text = GameObject.Find("LapTimeText");
         s_text = GameObject.Find("SpeedText");
         fast_lap = GameObject.Find("FastLapText");
@@ -49,12 +50,12 @@ public class CarUI : MonoBehaviour
     void Update()
     {
         lap_time = check_point_check.lap_time;
-        lap_time_text.text = "LAP TIME: " + lap_time.ToString();
+        lap_time_text.text = "LAP TIME: " + lap_time.ToString("f2");
 
         current_speed = car_controller.CurrentSpeed;
         speed_text.text = ((int)current_speed).ToString() + " km/h";
 
         fastest_lap = check_point_check.fast_lap;
-        fast_lap_text.text = "FAST LAP: " + fastest_lap.ToString();
+        fast_lap_text.text = "FAST LAP: " + fastest_lap.ToString("f2");
     }
 }
