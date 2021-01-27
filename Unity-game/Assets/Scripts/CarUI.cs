@@ -71,7 +71,7 @@ public class CarUI : MonoBehaviour
             s_text.SetActive(false);
             car_controller.enabled = false;
             car_user_control.enabled = false;
-            car_body.velocity = car_body.velocity * 0.9f;
+            car_body.velocity = car_body.velocity * 0.99f;
         }
     }
 }
