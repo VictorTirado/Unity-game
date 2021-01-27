@@ -21,7 +21,7 @@ public class CheckpointCheck : MonoBehaviour
     public float lap_time = 0.0f;
     public float fast_lap = 0.0f;
     bool passed_goal = false;
-
+    public bool check_bool = false;
     // Start is called before the first frame update
     void Start()
     {
@@ -71,7 +71,15 @@ public class CheckpointCheck : MonoBehaviour
             lastCheckpointPos = transform.position;
             lastCheckpointRot = transform.rotation;
 
-            collider.gameObject.SetActive(false);
+            //collider.gameObject.SetActive(false);
+        }
+        if (collider.gameObject.tag == "check_bool")
+        {
+            Debug.Log("COLLIDING WITH A CHECKPOINT!");
+
+            check_bool = true;
+
+           
         }
 
         else if (collider.gameObject.tag == "Goal")
@@ -91,18 +99,18 @@ public class CheckpointCheck : MonoBehaviour
 
             Debug.Log("COLLIDING WITH THE GOAL!");
 
-            bool passedAllChecks = true;
+            //bool passedAllChecks = true;
 
-            foreach (GameObject checkpoint in checks)
-            {
-                if (checkpoint.activeInHierarchy)
-                {
-                    passedAllChecks = false;
-                    break;
-                }                
-            }
+            //foreach (GameObject checkpoint in checks)
+            //{
+            //    if (checkpoint.activeInHierarchy)
+            //    {
+            //        passedAllChecks = false;
+            //        break;
+            //    }                
+            //}
 
-            if (passedAllChecks)
+            if (check_bool == true)
             {
                 foreach (GameObject checkpoint in checks)
                 {

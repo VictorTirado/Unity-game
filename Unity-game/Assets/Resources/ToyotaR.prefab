@@ -10108,6 +10108,7 @@ MonoBehaviour:
   checks: []
   lap_time: 0
   fast_lap: 0
+  check_bool: 0
 --- !u!65 &8595885179245667201
 BoxCollider:
   m_ObjectHideFlags: 0
