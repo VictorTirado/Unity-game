@@ -1226,6 +1226,36 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1326967655789378517, guid: c78fbde5c6dc17f45996166dbd184283,
+        type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1326967655789378517, guid: c78fbde5c6dc17f45996166dbd184283,
+        type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1326967655789378517, guid: c78fbde5c6dc17f45996166dbd184283,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 668
+      objectReference: {fileID: 0}
+    - target: {fileID: 1326967655789378517, guid: c78fbde5c6dc17f45996166dbd184283,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -186.00003
+      objectReference: {fileID: 0}
+    - target: {fileID: 1326967655789378517, guid: c78fbde5c6dc17f45996166dbd184283,
+        type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 1247
+      objectReference: {fileID: 0}
+    - target: {fileID: 1326967655789378517, guid: c78fbde5c6dc17f45996166dbd184283,
+        type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 292.00006
+      objectReference: {fileID: 0}
     - target: {fileID: 1949748978414646800, guid: c78fbde5c6dc17f45996166dbd184283,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1281,6 +1311,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5474327241013669294, guid: c78fbde5c6dc17f45996166dbd184283,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8573207764494470049, guid: c78fbde5c6dc17f45996166dbd184283,
         type: 3}
       propertyPath: m_Name
@@ -1295,6 +1330,16 @@ PrefabInstance:
         type: 3}
       propertyPath: viewIdField
       value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 9182493738726086092, guid: c78fbde5c6dc17f45996166dbd184283,
+        type: 3}
+      propertyPath: m_FontData.m_HorizontalOverflow
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9182493738726086092, guid: c78fbde5c6dc17f45996166dbd184283,
+        type: 3}
+      propertyPath: m_FontData.m_Alignment
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c78fbde5c6dc17f45996166dbd184283, type: 3}
