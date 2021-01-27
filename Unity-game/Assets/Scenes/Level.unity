@@ -2147,6 +2147,8 @@ MonoBehaviour:
   SpawnPoint:
   - {fileID: 584333113}
   - {fileID: 118579342}
+  - {fileID: 2057049404}
+  - {fileID: 1442811435}
 --- !u!4 &1723579191
 Transform:
   m_ObjectHideFlags: 0
