@@ -25,7 +25,7 @@ public class NetworkController : MonoBehaviourPunCallbacks
         PhotonNetwork.AutomaticallySyncScene = true; //all players same scene
         btnStart.SetActive(true);
 
-        Status("Connected to " + PhotonNetwork.ServerAddress);
+        Status("Connected to: " + PhotonNetwork.ServerAddress);
     }
     public void btnStart_Click()
     {
