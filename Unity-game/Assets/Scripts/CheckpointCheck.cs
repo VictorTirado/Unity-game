@@ -18,6 +18,8 @@ public class CheckpointCheck : MonoBehaviour
 
     private Rigidbody car_body;
 
+    public float lap_time = 0.0f;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -39,6 +41,9 @@ public class CheckpointCheck : MonoBehaviour
 
     void Update()
     {
+
+        lap_time += Time.deltaTime;
+
         if (Input.GetKeyDown(KeyCode.T))
         {
             respawnLastCheckpoint();
@@ -67,6 +72,8 @@ public class CheckpointCheck : MonoBehaviour
 
         else if (collider.gameObject.tag == "Goal")
         {
+            lap_time = 0.0f;
+
             Debug.Log("COLLIDING WITH THE GOAL!");
 
             bool passedAllChecks = true;
