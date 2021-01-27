@@ -19,6 +19,8 @@ public class CheckpointCheck : MonoBehaviour
     private Rigidbody car_body;
 
     public float lap_time = 0.0f;
+    public float fast_lap = 0.0f;
+    bool passed_goal = false;
 
     // Start is called before the first frame update
     void Start()
@@ -64,6 +66,8 @@ public class CheckpointCheck : MonoBehaviour
         {
             Debug.Log("COLLIDING WITH A CHECKPOINT!");
 
+            passed_goal = false;
+
             lastCheckpointPos = transform.position;
             lastCheckpointRot = transform.rotation;
 
@@ -71,7 +75,18 @@ public class CheckpointCheck : MonoBehaviour
         }
 
         else if (collider.gameObject.tag == "Goal")
-        {
+        {         
+            if(fast_lap == 0.0f && passed_goal == false)
+            {
+                fast_lap = lap_time;
+            }
+            else if(lap_time < fast_lap && passed_goal == false)
+            {
+                fast_lap = lap_time;
+            }
+
+            passed_goal = true;
+
             lap_time = 0.0f;
 
             Debug.Log("COLLIDING WITH THE GOAL!");
